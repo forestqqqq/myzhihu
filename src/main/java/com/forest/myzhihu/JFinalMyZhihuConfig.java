@@ -1,5 +1,6 @@
 package com.forest.myzhihu;
 
+import com.forest.myzhihu.index.IndexController;
 import com.jfinal.config.*;
 
 /**
@@ -10,12 +11,12 @@ import com.jfinal.config.*;
 public class JFinalMyZhihuConfig extends JFinalConfig {
 	@Override
 	public void configConstant(Constants constants) {
-
+		constants.setDevMode(true);
 	}
 
 	@Override
 	public void configRoute(Routes routes) {
-
+		routes.add("/", IndexController.class);
 	}
 
 	@Override
