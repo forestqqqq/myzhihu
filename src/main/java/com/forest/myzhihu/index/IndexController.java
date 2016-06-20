@@ -10,7 +10,7 @@ import com.jfinal.core.Controller;
 public class IndexController extends Controller{
 
 	public void index() throws Exception{
-		renderText("测试首页");
+		renderText("测试首页测试了.....哈哈哈");
 	}
 
 }
